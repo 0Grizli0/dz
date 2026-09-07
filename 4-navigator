@@ -1,1 +1,15 @@
+// Входные данные (задаются вручную)
+const positionLatitude = 10;
+const positionLongitude = 15;
+const addressLatitude = 14;
+const addressLongitude = 18;
 
+// Вычисление разницы по осям X и Y
+const deltaLat = addressLatitude - positionLatitude;
+const deltaLong = addressLongitude - positionLongitude;
+
+// Расчет расстояния по теореме Пифагора
+const distance = Math.sqrt(deltaLat ** 2 + deltaLong ** 2);
+
+// Вывод результата в консоль
+console.log(`Расстояние до пункта назначения: ${distance}`);
